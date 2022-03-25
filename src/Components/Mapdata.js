@@ -5,7 +5,6 @@ const Mapdata = ({Item,loding}) => {
   if(loding){
     return <h2>datas are Loding..... </h2>
   }
-  
   return (
     
     <div>

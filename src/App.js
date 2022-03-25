@@ -43,6 +43,8 @@ const ChangePage = (pagenumber) =>{
 // }
   return (
     <div>
+{/* //********************SearcHProducT COMPONENT *************************** */}
+
 {/* <SearchProduct
   searchTerm={searchTerm}
   searcHendler={searcHendler}
