@@ -1,18 +1,19 @@
-import React from 'react'
+import React,{useState} from 'react';
 
 const Mapdata = ({Item,loding}) => {
+
   if(loding){
     return <h2>datas are Loding..... </h2>
   }
+  
   return (
+    
     <div>
-          <table className="tableMidle">
-
+       <table className="tableMidle">
       {
-        Item.map((value,index)=>{ 
+        Item.map((value)=>{ 
           return(<>
-            <tr className="dis_flex">
-
+          <tr className="dis_flex">
           <td className="table-map">{value.brand_selling_score}  </td>
           <td className="table-map">{value.product_name} </td>
           <td className="table-map">{value.minor_category_selling_score} </td>
@@ -24,10 +25,10 @@ const Mapdata = ({Item,loding}) => {
           </tr>
           </>)
         })
-        
     }
     </table>
-      
+
+
     </div>
   )
 }

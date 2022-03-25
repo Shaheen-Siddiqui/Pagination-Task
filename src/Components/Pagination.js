@@ -2,7 +2,6 @@ import React,{useState} from 'react';
 
 const Pagination = ({postPerPage,totalPost,ChangePage,}) => {
   
-  const [count,setCount]=useState(1)
     
   let PageNumber = [];
     for(let i=1; i<=Math.ceil(totalPost/postPerPage); i++){

@@ -5,7 +5,9 @@
 }
 
 .table-Head{ 
-    width:100%;}
+ width:30rem;
+
+    }
 .saprate-th{ 
     display:flex;
     justify-content:space-evenly;
@@ -17,7 +19,7 @@
 }
 .table-data { 
     height:4rem;
-    width:9.9rem;
+    width:9.5rem;
     display:flex;
     font-size: 1.2rem;
     border: 1px solid #f1f5f9;
@@ -73,21 +75,6 @@ margin-left: 2rem;
     width: 13rem;
     height: 2rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* MEDIA QUERYES */
 @media (max-width: 768px) {

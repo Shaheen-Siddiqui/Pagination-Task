@@ -6,10 +6,13 @@ import Pagination from './Components/Pagination';
 import SearchProduct from './Components/SearchProduct'
 
 const App = () => {
-  const [Item,setItem]=useState([])
+  const [Item,setItem]=useState([]) //contact state
   const [loding,setLoding]=useState(false);
   const [currentPage,setCurrentPage]=useState(1);
   const [postPerPage]=useState(3);
+// **********searchProducts HOOKS*************
+  const [searchTerm,setSearchTerm]=useState('');
+  const [searchResult,setSearchResult]=useState([]);
 
 
   useEffect(() => {
@@ -25,13 +28,25 @@ const App = () => {
 const lastPost = currentPage* postPerPage;
 const firstPost = lastPost - postPerPage
 const currentPost = Item.slice(firstPost,lastPost)
-
 const ChangePage = (pagenumber) =>{
   setCurrentPage (pagenumber)
 }
+
+//************ */ searchProducts FUNCTIONS**********
+// let searcHendler = () =>{
+//   setSearchTerm(searchTerm)
+//   if(searchTerm!==''){
+//     const variable = Item.filter((val)=>{ 
+//       console.log(Object.values(val));
+//     })
+//   }
+// }
   return (
     <div>
-<SearchProduct/>
+{/* <SearchProduct
+  searchTerm={searchTerm}
+  searcHendler={searcHendler}
+/> */}
 
 <UpperData />
 <Mapdata Item={currentPost} loding={loding} />
